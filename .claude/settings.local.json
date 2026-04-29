@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(where bun *)",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\Rafael Lemos\\\\.bun\\\\\" -ErrorAction SilentlyContinue; Get-ChildItem \"$env:LOCALAPPDATA\\\\bun\\\\\" -ErrorAction SilentlyContinue; Get-ChildItem \"$env:APPDATA\\\\bun\\\\\" -ErrorAction SilentlyContinue)",
+      "Bash(npx vite *)"
+    ]
+  }
+}

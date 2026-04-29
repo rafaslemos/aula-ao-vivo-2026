@@ -150,9 +150,9 @@ function Index() {
               ) : (
                 <>
                   <SurveyStep step={step} form={form} update={update} />
-                  {status === "error" && (
+                  {status === "error" ? (
                     <p className="mt-4 text-sm font-semibold text-destructive">{feedback}</p>
-                  )}
+                  ) : null}
                   <div className="mt-7 flex items-center justify-between gap-3">
                     <Button
                       variant="ghost"
@@ -176,7 +176,7 @@ function Index() {
                       ) : (
                         "Continuar"
                       )}
-                      {status !== "loading" && <ArrowRight className="h-5 w-5" />}
+                      {status !== "loading" ? <ArrowRight className="h-5 w-5" /> : null}
                     </Button>
                   </div>
                 </>
