@@ -1,4 +1,6 @@
 {
+  "version": 2,
+  "framework": null,
   "buildCommand": "npx vite build",
   "outputDirectory": "dist/client",
   "functions": {
@@ -7,10 +9,8 @@
       "memory": 512
     }
   },
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/api/handler"
-    }
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "dest": "/api/handler" }
   ]
 }
